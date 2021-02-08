@@ -6,6 +6,6 @@ node {
      commit_id = readFile('.git/commit-id').trim()
    }
    stage('Build image') {
-        sh "docker build --build-arg APP_NAME=nodejs -t 022539168230.dkr.ecr.us-east-1.amazonaws.com/solrsearch/:latest ."
+        sh "docker build --build-arg APP_NAME=nodejs -t 022539168230.dkr.ecr.us-east-1.amazonaws.com/solrsearch/:latest -f Dockerfile ."
     }
 }
