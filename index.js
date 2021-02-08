@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.send('Hello World WP - 3:07AM and working!');
+  res.send('Hello World WP - 3:13AM and working with RedBull!');
 });
 
 var server = app.listen(3000, function () {
