@@ -12,7 +12,7 @@ node {
      }
    }
    stage('docker build/push') {
-     docker.withRegistry('https://022539168230.dkr.ecr.us-east-2.amazonaws.com/john/', 'dockerhub') {
+     docker.withRegistry('022539168230.dkr.ecr.us-east-1.amazonaws.com/solrsearch/', 'dockerhub') {
        def app = docker.build("fluidout/docker-nodejs-demo:${commit_id}", '.').push()
      }
    }
